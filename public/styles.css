@@ -2,13 +2,19 @@ body{
     font-family:'Mononoki', monospace;
     text-align:center;
     padding: 20px;
+    background-color: rgb(90, 78, 78);
 }
 #score{
     font-size: 18px;
     margin: 20px 0;
 }
-button{
+button {
     padding: 10px 20px;
     font-size: 15px;
-    cursor:pointer;
+    cursor: pointer;
+    background: radial-gradient(circle, rgb(124, 112, 112) 0%, rgb(107, 93, 93) 70%);
+    border-radius: 11.4px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
