@@ -28,7 +28,7 @@ router.get("/users/:id", (req: Request, res: Response) => {``
     res.status(404).json({ message: "User not found" });
   }
 });
-// TODO: CREATE
+// CREATE
 router.post("/users", (req: Request, res: Response) => {
   const newUser: User = {
     id: users.length + 1,
@@ -41,7 +41,7 @@ router.post("/users", (req: Request, res: Response) => {
   res.status(201).json(newUser);
 });
 
-// TODO: UPDATE BY ID using put
+// UPDATE BY ID using put
 router.put("/users/:id", (req: Request, res: Response) =>{
   const userId = parseInt(req.params.id);
   const userIndex = users.findIndex((user) => user.id === userId);
@@ -58,7 +58,7 @@ router.put("/users/:id", (req: Request, res: Response) =>{
  }
 });
 
-// TODO: DELETE BY ID
+// DELETE BY ID
 router.delete("/users/:id", (req: Request, res: Response) => {
   const userId = parseInt(req.params.id);
   const userIndex = users.findIndex((user) => user.id === userId);
